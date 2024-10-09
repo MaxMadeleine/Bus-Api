@@ -4,20 +4,19 @@
 html {
   scroll-behavior: smooth;
 }
-
-* {
+*{
   padding: 0;
   margin: 0;
 }
-
 /* VARIABLES IN HTML: */
+:root {
+}
 body {
   font-family: "Smooch Sans", sans-serif; /*"SMOOCH SANS" IS A GOOGLE FONT*/
   font-weight: 400;
   max-width: 1305px;
   margin: auto;
 }
-
 .departureCard {
   display: flex;
   justify-content: space-between;
@@ -29,17 +28,16 @@ body {
   background-color: #f9f9f9;
   width: 400px;
 }
-
+//flex: 1 tager så meget plads som muligt
 .departureCard .name {
   flex: 1;
   text-align: center;
 }
-
+//fast bredde på 25% af containeren.
 .departureCard .time {
   flex: 0 0 25%;
   text-align: right;
 }
-
 /* #endregion MAIN SHIT  */
 /* #region GLOBAL HEADER */
 /* #endregion */
@@ -56,4 +54,4 @@ body {
 /* #region GLOBAL FOOTER */
 /* #endregion */
 /* #region MEDIA QUERIES  */
-/* #endregion *//*# sourceMappingURL=main.css.map */
+/* #endregion */
