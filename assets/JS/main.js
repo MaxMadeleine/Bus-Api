@@ -29,10 +29,11 @@ const displayData = (data) => {
             });
 
             // Clear html (den skal rettes til projektet)
-            container.innerHTML = '';
+            container.innerHTML += '';
 
             // Create and append elements for each departure
-            departures.forEach(dep => {
+            departures.forEach((dep, index) => {
+                if (index < 4){ ;
                 const card = document.createElement('div');
                 card.className = 'departureCard';
                 
@@ -43,6 +44,7 @@ const displayData = (data) => {
                 `;
 
                 container.appendChild(card);
+                }
             });
 
         } else {
